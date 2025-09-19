@@ -43,3 +43,39 @@ This dashboard provides key insights into customer demographics and behavior:
 Business managers can use these insights to target campaigns more effectively, e.g., focusing high-income married customers with premium offers.
 
 📂 File Location: `data_sample/Dashboard/Customer.pbix`
+
+## 🚀 How to Run the Python Backend
+
+1. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate   # On Windows
+
+
+pip install -r requirements.txt
+python backend/segmentation.py
+
+
+
+---
+
+## 📊 Key Insights
+- Customers segmented into **3 clusters** based on Income + Demographics.
+- Cluster 0 → Low-income group  
+- Cluster 1 → Mid-income group  
+- Cluster 2 → High-income group  
+- Business can target:
+  - **Cluster 0** with budget-friendly offers.  
+  - **Cluster 1** with cross-sell opportunities.  
+  - **Cluster 2** with premium services/products.  
+
+---
+
+## ✅ Next Steps
+- Add more features (Age, Spending Score, etc.) to improve clustering.
+- Automate the pipeline → schedule Python script for weekly refresh.
+- Deploy Power BI dashboard to Power BI Service for online access.
+- Enhance demo with short walkthrough video.
+
+---
+
